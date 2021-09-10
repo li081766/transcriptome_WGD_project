@@ -1,0 +1,27 @@
+##### software used in the pipelines, revise to the correct path based on your configuration #####
+soapdenovo_trans = Software/SOAPdenovo-Trans/SOAPdenovo-Trans-31mer
+gapcloser = /software/shared/apps/x86_64/gapcloser/1.12-r6/GapCloser
+trinity = ~/miniconda3/envs/Trinity/bin/Trinity
+cd_hit_est = /software/shared/apps/x86_64/cd-hit/4.8.1/cd-hit-est
+cd_hit = /software/shared/apps/x86_64/cd-hit/4.8.1/cd-hit
+seqclean = /software/shared/apps/x86_64/seqclean/20100629/seqclean
+transrate = /software/shared/apps/x86_64/transrate/1.0.3/transrate
+rnaQUAST = ~/miniconda3/pkgs/rnaquast-2.0.1-0/bin/rnaQUAST.py
+busco = ~/miniconda3/envs/Busco/bin/busco
+busco_db = /scratch/saururus/jiali/database/BUSCO
+longorfs = /software/shared/apps/x86_64/transdecoder/5.0.2/TransDecoder.LongOrfs
+predict = /software/shared/apps/x86_64/transdecoder/5.0.2/TransDecoder.Predict
+diamond = /software/shared/apps/x86_64/diamond/0.9.18/diamond
+hmmscan = /software/shared/apps/x86_64/hmmer/3.1b2/bin/hmmscan
+get_longest_isoform_seq_per_trinity_gene = /miniconda3/pkgs/trinity-2.12.0-h5ef6573_0/opt/trinity-2.12.0/util/misc/get_longest_isoform_seq_per_trinity_gene.pl
+
+
+##### these scritps are stored in Scripts/ folder #####
+selecting_gff3 = ../Scripts/selecting_gff3.pl
+Selecting_Trinity_transcript_based_on_Transdecoder = ../Scripts/Selecting_Trinity_transcript_based_on_Transdecoder.pl
+Select_transdecoder_cds = ../Scripts/Select_transdecoder_cds.pl
+Selecting_Trinity_transcript_based_on_Transdecoder_longest_orfs = ../Scripts/Selecting_Trinity_transcript_based_on_Transdecoder_longest_orfs.pl
+Select_transcripts = ../Scripts/Select_transcripts.pl
+get_clstr_info = ../Scripts/get_clstr_info.pl
+Select_fasta_based_on_length = ../Scripts/Select_fasta_based_on_length.pl
+length = ../Scripts/get_chr_len.pl
