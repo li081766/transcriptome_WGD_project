@@ -461,7 +461,7 @@ sub run_cdhit{
 	for my $sample ( sort keys %$orfs ){
 		my $sub_dir = "$dir/$sample";
 		mkdir $sub_dir unless -d $sub_dir;
-		print SHELL "$CDHITEST -i $orfs->{$sample} $Cdhit_para -o $sub_dir/$sample.transdecoder.cdhit.pep\n";
+		print SHELL "$CDHIT -i $orfs->{$sample} $Cdhit_para -o $sub_dir/$sample.transdecoder.cdhit.pep\n";
 		$cdhit_out->{$sample} = "$sub_dir/$sample.transdecoder.cdhit.pep";
 		$cdhit_cds->{$sample} = "$sub_dir/$sample.transdecoder.cdhit.cds";
 	}
